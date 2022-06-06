@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Desaturated-Red: hsl(0, 36%, 70%);
+    --Soft-Red: hsl(0, 93%, 68%);
+    --Dark-Grayish-Red: hsl(0, 6%, 24%);
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--Desaturated-Red);
+}
+.main-container{
+    width: 375px;
+    margin: auto;
+}
+.logo{
+    width: 100px;
+    margin: 30px;
+}
+.picture{
+    margin-bottom: 60px;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    color: var(--Dark-Grayish-Red);
+    font-weight: 700;
+    letter-spacing: 11px;
+    margin-bottom: 30px;
+}
+h1 span{
+    color: var(--Desaturated-Red);
+    font-weight: 300;
+}
+.description{
+    margin: 0 40px;
+    text-align: center;
+    font-size: 0.85em;
+    line-height: 1.4em;
+    margin-bottom: 40px;
+}
+form{
+    width: 310px;
+    height: 50px;
+    margin: 0 auto 35px;
+    position: relative;
+}
+input[type="text"]{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    padding-left: 16px;
+    border: 1px solid var(--Desaturated-Red);
+    outline: none;
+}
+input[type="text"]::placeholder{
+    color: var(--Desaturated-Red);
+}
+input[type="image"]{
+    width: 65px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    border-radius: 50px;
+    border: 1px solid var(--Desaturated-Red);
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    padding: 14px 25px;
+    
+}
+input[type="image"]:hover{
+    cursor: pointer;
+}
+
+.attribution { 
+    font-size: 16px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
