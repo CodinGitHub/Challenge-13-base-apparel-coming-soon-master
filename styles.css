@@ -13,18 +13,18 @@ body{
     font-family: 'Josefin Sans', sans-serif;
     color: var(--Desaturated-Red);
 }
-.main-container{
+.container{
     width: 375px;
     margin: auto;
 }
-.logo{
+.container__logo{
     width: 100px;
     margin: 30px;
 }
-.picture{
+.container__picture{
     margin-bottom: 60px;
 }
-h1{
+.container__content__title{
     text-align: center;
     text-transform: uppercase;
     font-size: 2.5em;
@@ -33,24 +33,23 @@ h1{
     letter-spacing: 11px;
     margin-bottom: 30px;
 }
-h1 span{
+.container__content__title--color-red{
     color: var(--Desaturated-Red);
     font-weight: 300;
 }
-.description{
-    margin: 0 40px;
+.container__content__description{
+    margin: 0 40px 40px;
     text-align: center;
     font-size: 0.85em;
     line-height: 1.4em;
-    margin-bottom: 40px;
 }
-form{
+.container__content__form{
     width: 310px;
     height: 50px;
     margin: 0 auto 35px;
     position: relative;
 }
-input[type="text"]{
+.container__content__form__text{
     width: 100%;
     height: 100%;
     border-radius: 50px;
@@ -58,10 +57,10 @@ input[type="text"]{
     border: 1px solid var(--Desaturated-Red);
     outline: none;
 }
-input[type="text"]::placeholder{
+.container__content__form__text::placeholder{
     color: var(--Desaturated-Red);
 }
-input[type="image"]{
+.container__content__form__image{
     width: 65px;
     height: 50px;
     position: absolute;
@@ -72,7 +71,7 @@ input[type="image"]{
     padding: 14px 25px;
     
 }
-input[type="image"]:hover{
+.container__content__form__image:hover{
     cursor: pointer;
 }
 
@@ -82,4 +81,36 @@ input[type="image"]:hover{
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+/*----------------Desktop-------------------------*/
+@media (min-width: 1440px){
+    .container{
+        width: 1440px;
+        position: relative;
+        background-image: url(./images/bg-pattern-desktop.svg);
+    }
+    .container__logo{
+        width: 160px;
+        margin: 35px;
+        margin-left: 166px;
+    }
+    .container__picture{
+        content: url(./images/hero-desktop.jpg);
+        position: absolute;
+        right: 0;
+    }
+    .container__content{
+        width: 444px;
+        margin: 125px 0 0 166px; 
+    }
+    .container__content__title{
+        text-align: left;
+        font-size: 4.1em;
+        letter-spacing: 15px;
+    }
+    .container__content__description{
+        text-align: left;
+        border: 1px solid red;
+        margin: 0 0 40px;
+    }
 }
