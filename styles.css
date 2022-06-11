@@ -15,7 +15,7 @@ body{
 }
 .container{
     width: 375px;
-    margin: auto;
+    margin: 0 auto 80px;
 }
 .container__logo{
     width: 100px;
@@ -56,6 +56,10 @@ body{
     padding-left: 16px;
     border: 1px solid var(--Desaturated-Red);
     outline: none;
+    /* background-image: url(./images/icon-error.svg); */
+    /* background-image: url(); */
+    background-repeat: no-repeat;
+    background-position: 300px 18px;
 }
 .container__content__form__text::placeholder{
     color: var(--Desaturated-Red);
@@ -73,11 +77,17 @@ body{
 }
 .container__content__form__image:hover{
     cursor: pointer;
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 80%, 86%));
 }
-
+.container__content__form__error{
+    font-size: 0.85em;
+    margin: 8px 0 0 14px;
+    color: var(--Soft-Red);
+}
 .attribution { 
     font-size: 16px; 
     text-align: center; 
+    margin-bottom: 60px;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
@@ -85,9 +95,11 @@ body{
 /*----------------Desktop-------------------------*/
 @media (min-width: 1440px){
     .container{
+        height: 800px;
         width: 1440px;
         position: relative;
         background-image: url(./images/bg-pattern-desktop.svg);
+        margin-bottom: 40px;
     }
     .container__logo{
         width: 160px;
@@ -110,7 +122,16 @@ body{
     }
     .container__content__description{
         text-align: left;
-        border: 1px solid red;
+        font-size: 1em;
         margin: 0 0 40px;
+    }
+    .container__content__form{
+        width: 100%;
+        height: 60px;
+    }
+    .container__content__form__image{
+        width: 100px;
+        height: 60px; 
+        padding: 20px 42px;
     }
 }
