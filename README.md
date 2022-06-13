@@ -47,5 +47,5 @@ Users should be able to:
 - Youtube - [CodingTube](https://www.youtube.com/codingtube)
 - Website - [coding-tube.com](https://www.your-site.com)
 - TikTok - [CodingTube](https://www.tiktok.com/@codingtube)
-- Twitter - [@yourusername](https://www.twitter.com/CodingTube)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/CodinGitHub)
+- Twitter - [CodingTube](https://www.twitter.com/CodingTube)
+- Frontend Mentor - [CodinGitHub](https://www.frontendmentor.io/profile/CodinGitHub)
