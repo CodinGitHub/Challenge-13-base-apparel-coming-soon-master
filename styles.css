@@ -8,6 +8,10 @@
     --Desaturated-Red: hsl(0, 36%, 70%);
     --Soft-Red: hsl(0, 93%, 68%);
     --Dark-Grayish-Red: hsl(0, 6%, 24%);
+    --Gradient-1: hsl(0, 0%, 100%);
+    --Gradient-2: hsl(0, 100%, 98%);
+    --Gradient-3: hsl(0, 80%, 86%);
+    --Gradient-4: hsl(0, 74%, 74%);
 }
 body{
     font-family: 'Josefin Sans', sans-serif;
@@ -15,7 +19,9 @@ body{
 }
 .container{
     width: 375px;
+    height: 800px;
     margin: 0 auto 80px;
+    background-color: var(--Gradient-2);
 }
 .container__logo{
     width: 100px;
@@ -46,10 +52,10 @@ body{
 .container__content__form{
     width: 310px;
     height: 50px;
-    margin: 0 auto 35px;
+    margin: 0 auto;
     position: relative;
 }
-.container__content__form__text{
+.container__content__form__email{
     width: 100%;
     height: 100%;
     border-radius: 50px;
@@ -57,29 +63,28 @@ body{
     border: 1px solid var(--Desaturated-Red);
     outline: none;
     /* background-image: url(./images/icon-error.svg); */
-    /* background-image: url(); */
     background-repeat: no-repeat;
-    background-position: 300px 18px;
+    background-position: 210px 12px;
 }
-.container__content__form__text::placeholder{
+.container__content__form__email::placeholder{
     color: var(--Desaturated-Red);
 }
-.container__content__form__image{
-    width: 65px;
-    height: 50px;
+.container__content__form__button{
+    width: 68px;
+    height: 52px;
     position: absolute;
     right: 0;
+    top: -1px;
     border-radius: 50px;
-    border: 1px solid var(--Desaturated-Red);
-    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    background: linear-gradient(135deg, var(--Gradient-3), var(--Gradient-4));
     padding: 14px 25px;
-    
 }
-.container__content__form__image:hover{
+.container__content__form__button:hover{
     cursor: pointer;
-    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 80%, 86%));
+    background: linear-gradient(135deg, var(--Gradient-2), var(--Gradient-4));
+    box-shadow: 0 10px 15px var(--Gradient-4) ;
 }
-.container__content__form__error{
+.container__content__form__email--error{
     font-size: 0.85em;
     margin: 8px 0 0 14px;
     color: var(--Soft-Red);
@@ -129,9 +134,13 @@ body{
         width: 100%;
         height: 60px;
     }
-    .container__content__form__image{
-        width: 100px;
-        height: 60px; 
+    .container__content__form__email{
+        background-position: 300px 18px;
+    }
+    .container__content__form__button{
+        width: 102px;
+        height: 62px; 
         padding: 20px 42px;
     }
+
 }
